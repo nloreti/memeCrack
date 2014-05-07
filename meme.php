@@ -20,13 +20,10 @@
 	      	<a class="brand" href="#">
 			  MEME Geneartor - Trivia Crack
 			</a>
-			<ul class="nav">
+			<ul class="active">
 			  <li>
                 <a href="./index.php">Home</a>
               </li>
-                <li class="active">
-                    <a href="./comparacion.php">Generator</a>
-                </li>
 			</ul>
 		</div>
 	  </div>
@@ -40,12 +37,40 @@
         $opcion2 = $_POST["opcion2"];
         $opcion3 = $_POST["opcion3"];
         $respuesta_correcta = $_POST["opcion_correcta"];
-        $command = "java -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$pregunta2."\" \"".$pregunta3."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\"";
-        echo $command;
-        $output = exec($command);
-        echo $output; 
+        $hash = hash('md5', $pregunta1.$pregunta2.$pregunta3.$opcion1.$opcion2.$opcion3);
+        $command = "java -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$pregunta2."\" \"".$pregunta3."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$hash."\"";
+        //echo $command;
+        exec($command);
+        //echo $output; 
+        $filename = $hash.".png";
+        //echo $filename;
+        echo "<img width='350' src='./".$filename."'>";
+        //$imagick = new Imagick(); 
+        //$imagick->readImage($filename); 
+        //$im = imagecreatefrompng($filename);
+        //header('Content-Type: image/png');
+        //imagepng($im);
+        //die();
+       
+        //$image = readfile($filename);
+        // Read image path, convert to base64 encoding
+        //$imageData = base64_encode(file_get_contents($image));
+
+        // Format the image SRC:  data:{mime};base64,{data};
+        //$src = 'data: '.mime_content_type($image).';base64,'.$imageData;
+
+        // Echo out a sample image
+        //echo '<img src="',$image,'">';
         ?>
-        
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 728x90, creado 3/11/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9140523267616881"
+     data-ad-slot="2940926437"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 	</div>
 </body>
 
