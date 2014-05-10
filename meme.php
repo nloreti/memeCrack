@@ -15,20 +15,32 @@
 
 <body>
 	<div class="navbar">
-	  <div class="navbar-inner">
-	    <div class="container">
-	      	<a class="brand" href="#">
-			  MEME Geneartor - Trivia Crack
-			</a>
-			<ul class="active">
-			  <li>
-                <a href="./index.php">Home</a>
-              </li>
-			</ul>
-		</div>
-	  </div>
-	</div>
+      <div class="navbar-inner">
+        <div class="container">
+            
+                    
+                    <img src="./logo.png" style="float:left;margin-top:25px; margin-right:10px;"/>
+                    <a class="brand" href="#">
+                    
+                    Preguntados <br/>Generator
+                    </a>
+    <div style="float:right;margin-top:10px;">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Trivia -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="ca-pub-9140523267616881"
+                 data-ad-slot="9730560540"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+             
+        </div>
+      </div>
+    </div>
     <div class="container">
+        <div class="filtros span3">
         <?php 
         $pregunta1 = $_POST["pregunta1"];
         $pregunta2 = $_POST["pregunta2"];
@@ -44,7 +56,7 @@
         //echo $output; 
         $filename = $hash.".png";
         //echo $filename;
-        echo "<img width='350' src='./".$filename."'>";
+        echo "<img width='240' src='./".$filename."'>";
         //$imagick = new Imagick(); 
         //$imagick->readImage($filename); 
         //$im = imagecreatefrompng($filename);
@@ -62,15 +74,33 @@
         // Echo out a sample image
         //echo '<img src="',$image,'">';
         ?>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 728x90, creado 3/11/09 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-9140523267616881"
-     data-ad-slot="2940926437"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+        </div>
+        <div class="filtros span8">
+            <div class="filtros span8"></div>
+            <div class="filtros span4">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Banner-2 -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:250px"
+                     data-ad-client="ca-pub-9140523267616881"
+                     data-ad-slot="7668084543"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            <div class="filtros span4">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Banner-2 -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:250px"
+                     data-ad-client="ca-pub-9140523267616881"
+                     data-ad-slot="7668084543"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+        </div>
 	</div>
 </body>
 

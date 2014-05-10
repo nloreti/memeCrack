@@ -17,15 +17,25 @@
 	<div class="navbar">
 	  <div class="navbar-inner">
 	    <div class="container">
-	      	<a class="brand" href="#">
-			  MEME Geneartor - Trivia Crack
-			</a>
-			<ul class="nav">
-			  <li class="active">
-                <a href="./index.php">Home</a>
-              </li>
-                
-			</ul>
+            
+                    
+                    <img src="./logo.png" style="float:left;margin-top:25px; margin-right:10px;"/>
+                    <a class="brand" href="#">
+                    
+        			Preguntados <br/>Generator
+        			</a>
+    <div style="float:right;margin-top:10px;">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Trivia -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="ca-pub-9140523267616881"
+                 data-ad-slot="9730560540"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+             
 		</div>
 	  </div>
 	</div>
@@ -40,12 +50,12 @@
                     <option value="deporte">Deporte</option>
                     <option value="geografia">Geografia</option>
                 </select>
-                Pregunta linea 1:<input name="pregunta1" id="pregunta1"/>
-                Pregunta linea 2:<input name="pregunta2" id="pregunta2"/>
-                Pregunta linea 3:<input name="pregunta3" id="pregunta3"/>
-                Opcion 1:<input name="opcion1" id="opcion1"/>
-                Opcion 2:<input name="opcion2" id="opcion2"/>
-                Opcion 3:<input name="opcion3" id="opcion3"/>
+                Pregunta linea 1:<input name="pregunta1" id="pregunta1" maxlength="30"/>
+                Pregunta linea 2:<input name="pregunta2" id="pregunta2" maxlength="30"/>
+                Pregunta linea 3:<input name="pregunta3" id="pregunta3" maxlength="30"/>
+                Opcion 1:<input name="opcion1" id="opcion1" maxlength="30"/>
+                Opcion 2:<input name="opcion2" id="opcion2" maxlength="30"/>
+                Opcion 3:<input name="opcion3" id="opcion3" maxlength="30"/>
                 Opcion Correcta:<input name="opcion_correcta" id="opcion_correcta"/>
                 <!--Cantidad de tweets:<input name="cantidad" id="cantidad"/>-->
                 
@@ -57,6 +67,32 @@
                 <input name="round" id="round" type="hidden" value="0"/>
                 <input name="active" id="active" type="hidden" value="1"/>
             </form>
+        </div>
+        <div class="filtros span8">
+            <div class="filtros span8"></div>
+            <div class="filtros span4">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Banner-2 -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:250px"
+                     data-ad-client="ca-pub-9140523267616881"
+                     data-ad-slot="7668084543"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            <div class="filtros span4">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Banner-2 -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:250px"
+                     data-ad-client="ca-pub-9140523267616881"
+                     data-ad-slot="7668084543"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
         </div>
 	</div>
 </body>
