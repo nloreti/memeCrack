@@ -41,39 +41,40 @@
     </div>
     <div class="container">
         <div class="filtros span3">
-        <?php 
-        $pregunta1 = $_POST["pregunta1"];
-        $pregunta2 = $_POST["pregunta2"];
-        $pregunta3 = $_POST["pregunta3"];
-        $opcion1 = $_POST["opcion1"];
-        $opcion2 = $_POST["opcion2"];
-        $opcion3 = $_POST["opcion3"];
-        $respuesta_correcta = $_POST["opcion_correcta"];
-        $hash = hash('md5', $pregunta1.$pregunta2.$pregunta3.$opcion1.$opcion2.$opcion3);
-        $command = "java -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$pregunta2."\" \"".$pregunta3."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$hash."\"";
-        //echo $command;
-        exec($command);
-        //echo $output; 
-        $filename = $hash.".png";
-        //echo $filename;
-        echo "<img width='240' src='./".$filename."'>";
-        //$imagick = new Imagick(); 
-        //$imagick->readImage($filename); 
-        //$im = imagecreatefrompng($filename);
-        //header('Content-Type: image/png');
-        //imagepng($im);
-        //die();
-       
-        //$image = readfile($filename);
-        // Read image path, convert to base64 encoding
-        //$imageData = base64_encode(file_get_contents($image));
+            <?php 
+            $pregunta1 = $_POST["pregunta1"];
+            $pregunta2 = $_POST["pregunta2"];
+            $pregunta3 = $_POST["pregunta3"];
+            $opcion1 = $_POST["opcion1"];
+            $opcion2 = $_POST["opcion2"];
+            $opcion3 = $_POST["opcion3"];
+            $respuesta_correcta = $_POST["opcion_correcta"];
+            $hash = hash('md5', $pregunta1.$pregunta2.$pregunta3.$opcion1.$opcion2.$opcion3);
+            $command = "java -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$pregunta2."\" \"".$pregunta3."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$hash."\"";
+            //echo $command;
+            exec($command);
+            //echo $output; 
+            $filename = $hash.".png";
+            //echo $filename;
+            echo "<img width='240' src='./".$filename."'>";
+            //$imagick = new Imagick(); 
+            //$imagick->readImage($filename); 
+            //$im = imagecreatefrompng($filename);
+            //header('Content-Type: image/png');
+            //imagepng($im);
+            //die();
+           
+            //$image = readfile($filename);
+            // Read image path, convert to base64 encoding
+            //$imageData = base64_encode(file_get_contents($image));
 
-        // Format the image SRC:  data:{mime};base64,{data};
-        //$src = 'data: '.mime_content_type($image).';base64,'.$imageData;
+            // Format the image SRC:  data:{mime};base64,{data};
+            //$src = 'data: '.mime_content_type($image).';base64,'.$imageData;
 
-        // Echo out a sample image
-        //echo '<img src="',$image,'">';
-        ?>
+            // Echo out a sample image
+            //echo '<img src="',$image,'">';
+            ?>
+            <div class="fb-share-button" data-href="http://triviacrackgenerator.com/meme.php" data-width="123" data-type="button_count"></div>
         </div>
         <div class="filtros span8">
             <div class="filtros span8"></div>
@@ -99,9 +100,16 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-
         </div>
 	</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=141188425906733&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 
 </html>
