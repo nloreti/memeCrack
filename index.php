@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
 
-<title>Visualizaci&oacute;n de la Informaci&oacute;n - ITBA - 2012</title>
+<title>Trivia Crack Generator</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                     <img src="./logo.png" style="float:left;margin-top:25px; margin-right:10px;"/>
                     <a class="brand" href="#">
                     
-        			Preguntados <br/>Generator
+        			Trivia Crack <br/>Generator
         			</a>
     <div style="float:right;margin-top:10px;">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
