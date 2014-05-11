@@ -10,26 +10,41 @@
 
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
 
-<title>Visualizaci&oacute;n de la Informaci&oacute;n - ITBA - 2012</title>
+<!-- Facebook Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
+<meta property="og:title" content="Trivia Crack Generator"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Generate your own trivia crack meme" />
+<meta property="fb:app_id" content="141188425906733"/>
+<meta property="og:url" content="http://triviacrackgenerator.com"/>
+<!-- <meta property="article:author" content="https://www.facebook.com/x" />
+<meta property="article:publisher" content="https://www.facebook.com/x" />
+ -->
+
+
+
+
+<title>Trivia Crack Generator</title>
 </head>
 
 <body>
     <!--Facebook share-->
-    <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=141188425906733&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 	<div class="navbar">
       <div class="navbar-inner">
         <div class="container">    
                     <img src="./logo.png" style="float:left;margin-top:25px; margin-right:10px;"/>
-                    <a class="brand" href="#">
+                    <a class="brand" href="http://triviacrackgenerator.com">
                     
-                    Preguntados <br/>Generator
+                    Trivia Crack <br/>Generator
                     </a>
     <div style="float:right;margin-top:10px;">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -78,12 +93,27 @@
             // Format the image SRC:  data:{mime};base64,{data};
             //$src = 'data: '.mime_content_type($image).';base64,'.$imageData;
 
-            // Echo out a sample image
-            //echo '<img src="',$image,'">';
 
-            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-width='123' data-type='button_count'></div>"
+            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button'></div>"
             ?>
             
+           <style>
+                  .fb-share-button
+                {
+                margin-top: 20px;
+                transform: scale(2);
+                -ms-transform: scale(2);
+                -webkit-transform: scale(2);
+                -o-transform: scale(2);
+                -moz-transform: scale(2);
+                transform-origin: top left;
+                -ms-transform-origin: top left;
+                -webkit-transform-origin: top left;
+                -moz-transform-origin: top left;
+                -webkit-transform-origin: top left;
+                }
+            </style> 
+
         </div>
         <div class="filtros span8">
             <div class="filtros span8"></div>
