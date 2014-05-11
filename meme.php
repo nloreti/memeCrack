@@ -95,19 +95,18 @@
 
             // Echo out a sample image
             //echo '<img src="',$image,'">';
-
+            echo "<br/>"            
             echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button_count'></div>"
-            //echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/'  data-type='button_count'></div>"
             ?>
             
            <style>
                   .fb-share-button
                 {
-                transform: scale(1.5);
-                -ms-transform: scale(1.5);
-                -webkit-transform: scale(1.5);
-                -o-transform: scale(1.5);
-                -moz-transform: scale(1.5);
+                transform: scale(2);
+                -ms-transform: scale(2);
+                -webkit-transform: scale(2);
+                -o-transform: scale(2);
+                -moz-transform: scale(2);
                 transform-origin: top left;
                 -ms-transform-origin: top left;
                 -webkit-transform-origin: top left;
