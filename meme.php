@@ -10,7 +10,19 @@
 
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
 
-<title>Visualizaci&oacute;n de la Informaci&oacute;n - ITBA - 2012</title>
+<!-- Facebook Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<meta property="og:title" content="Trivia Crack Generator"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://triviacrackgenerator.com"/>
+<meta property="og:description" content="Generate your own trivia crack meme" />
+<meta property="og:site_name" content="Trivia Crack Generator"/>
+<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
+
+
+
+<title>Trivia Crack Generator</title>
 </head>
 
 <body>
@@ -29,7 +41,7 @@
                     <img src="./logo.png" style="float:left;margin-top:25px; margin-right:10px;"/>
                     <a class="brand" href="#">
                     
-                    Preguntados <br/>Generator
+                    Trivia Crack <br/>Generator
                     </a>
     <div style="float:right;margin-top:10px;">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -81,10 +93,11 @@
             // Echo out a sample image
             //echo '<img src="',$image,'">';
 
-            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-width='123' data-type='button_count'></div>"
+            //echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-width='123' data-type='button_count'></div>"
+            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/' data-width='123' data-type='button_count'></div>"
             ?>
             
-            <style>
+           <style>
                   .fb-share-button
                 {
                 transform: scale(2.5);
@@ -98,7 +111,7 @@
                 -moz-transform-origin: top left;
                 -webkit-transform-origin: top left;
                 }
-            </style>
+            </style> 
 
         </div>
         <div class="filtros span8">
