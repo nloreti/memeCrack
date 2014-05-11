@@ -93,15 +93,13 @@
             // Format the image SRC:  data:{mime};base64,{data};
             //$src = 'data: '.mime_content_type($image).';base64,'.$imageData;
 
-            // Echo out a sample image
-            //echo '<img src="',$image,'">';
-            echo "<br/>"            
-            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button_count'></div>"
+            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button'></div>"
             ?>
             
            <style>
                   .fb-share-button
                 {
+                margin-top: 20px;
                 transform: scale(2);
                 -ms-transform: scale(2);
                 -webkit-transform: scale(2);
