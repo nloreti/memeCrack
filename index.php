@@ -16,14 +16,14 @@
 <!-- Facebook Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width"/>
+<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
 <meta property="og:title" content="Trivia Crack Generator"/>
 <meta property="og:type" content="article"/>
-<meta property="og:url" content="http://triviacrackgenerator.com"/>
 <meta property="og:description" content="Generate your own trivia crack meme" />
-<meta property="og:site_name" content="Trivia Crack Generator"/>
-<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
-
-
+<meta property="fb:app_id" content="141188425906733"/>
+<meta property="og:url" content="http://triviacrackgenerator.com"/>
+<!-- <meta property="article:author" content="https://www.facebook.com/x" />
+<meta property="article:publisher" content="https://www.facebook.com/x" /> -->
 
 
 
