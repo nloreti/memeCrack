@@ -9,7 +9,7 @@
 <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrapValidator.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-theme.min.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrapValidator.min.css" />
 <meta name="description" content="Generate your own trivia crack meme" />
@@ -154,8 +154,8 @@ $(document).ready(function() {
                     data-bv-notempty="true"
                     data-bv-notempty-message="El campo 'respuesta correcta' es requerido y no puede quedar vacio"
                     data-bv-stringlength="true"
-                    data-bv-stringlength-min="20"
-                    data-bv-stringlength-max="90"
+                    data-bv-stringlength-min="1"
+                    data-bv-stringlength-max="30"
                     data-bv-stringlength-message="La respuesta debe tener entre 1 y 30 caracteres"
                   />
                 </div>
