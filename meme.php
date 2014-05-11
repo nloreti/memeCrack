@@ -13,12 +13,16 @@
 <!-- Facebook Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width"/>
+<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
 <meta property="og:title" content="Trivia Crack Generator"/>
 <meta property="og:type" content="article"/>
-<meta property="og:url" content="http://triviacrackgenerator.com"/>
 <meta property="og:description" content="Generate your own trivia crack meme" />
-<meta property="og:site_name" content="Trivia Crack Generator"/>
-<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
+<meta property="fb:app_id" content="141188425906733"/>
+<meta property="og:url" content="http://triviacrackgenerator.com"/>
+<!-- <meta property="article:author" content="https://www.facebook.com/x" />
+<meta property="article:publisher" content="https://www.facebook.com/x" />
+ -->
+
 
 
 
@@ -32,9 +36,9 @@
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=104070986315547&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));</script>  
 	<div class="navbar">
       <div class="navbar-inner">
         <div class="container">    
@@ -69,7 +73,7 @@
             $opcion3 = $_POST["opcion3"];
             $respuesta_correcta = $_POST["opcion_correcta"];
             $hash = hash('md5', $pregunta1.$pregunta2.$pregunta3.$opcion1.$opcion2.$opcion3);
-            $command = "java -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$pregunta2."\" \"".$pregunta3."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$hash."\"";
+            $command = "java -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$hash."\"";
             //echo $command;
             exec($command);
             //echo $output; 
@@ -90,21 +94,19 @@
             // Format the image SRC:  data:{mime};base64,{data};
             //$src = 'data: '.mime_content_type($image).';base64,'.$imageData;
 
-            // Echo out a sample image
-            //echo '<img src="',$image,'">';
 
-            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button_count'></div>"
-            //echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/'  data-type='button_count'></div>"
+            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button'></div>"
             ?>
             
            <style>
                   .fb-share-button
                 {
-                transform: scale(1.5);
-                -ms-transform: scale(1.5);
-                -webkit-transform: scale(1.5);
-                -o-transform: scale(1.5);
-                -moz-transform: scale(1.5);
+                margin-top: 20px;
+                transform: scale(2);
+                -ms-transform: scale(2);
+                -webkit-transform: scale(2);
+                -o-transform: scale(2);
+                -moz-transform: scale(2);
                 transform-origin: top left;
                 -ms-transform-origin: top left;
                 -webkit-transform-origin: top left;
