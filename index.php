@@ -9,7 +9,7 @@
 <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrapValidator.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-theme.min.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrapValidator.min.css" />
 <meta name="description" content="Generate your own trivia crack meme" />
@@ -43,7 +43,7 @@ $(document).ready(function() {
     min-height: 115px;
   }
   .navbar-default {
-    background-image: linear-gradient(to bottom,#FFF 0,#00A3FF 100%);
+    background-image: linear-gradient(to bottom,#00A3FF 0,#00A3FF 100%);
   }
   
 </style>
