@@ -9,20 +9,43 @@
 <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
 
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+<meta name="description" content="Generate your own trivia crack meme" />
 
-<title>Visualizaci&oacute;n de la Informaci&oacute;n - ITBA - 2012</title>
+<title>Trivia Crack Generator</title>
+
+<!-- Facebook Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<meta property="og:title" content="Trivia Crack Generator"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://triviacrackgenerator.com"/>
+<meta property="og:description" content="Generate your own trivia crack meme" />
+<meta property="og:site_name" content="Trivia Crack Generator"/>
+<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
+
+
+
+
+
 </head>
 
 <body>
+    <!--Facebook share-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 	<div class="navbar">
 	  <div class="navbar-inner">
 	    <div class="container">
-            
-                    
                     <img src="./logo.png" style="float:left;margin-top:25px; margin-right:10px;"/>
                     <a class="brand" href="#">
                     
-        			Preguntados <br/>Generator
+        			Trivia Crack <br/>Generator
         			</a>
     <div style="float:right;margin-top:10px;">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -92,9 +115,10 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-
+            <div class="fb-share-button" data-href="http://triviacrackgenerator.com/a83920d1348eee579e4d5e2037b93657.png" data-width="123" data-type="button_count"></div>
         </div>
 	</div>
+
 </body>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
