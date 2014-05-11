@@ -43,7 +43,7 @@
 	  <div class="navbar-inner">
 	    <div class="container">
                     <img src="./logo.png" style="float:left;margin-top:25px; margin-right:10px;"/>
-                    <a class="brand" href="#">
+                    <a class="brand" href="http://triviacrackgenerator.com">
                     
         			Trivia Crack <br/>Generator
         			</a>
@@ -115,7 +115,7 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-            <div class="fb-share-button" data-href="http://triviacrackgenerator.com/a83920d1348eee579e4d5e2037b93657.png" data-width="123" data-type="button_count"></div>
+            <div class="fb-share-button" data-href="http://triviacrackgenerator.com/a83920d1348eee579e4d5e2037b93657.png" data-type="button_count"></div>
         </div>
 	</div>
 

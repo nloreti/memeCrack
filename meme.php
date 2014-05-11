@@ -39,7 +39,7 @@
       <div class="navbar-inner">
         <div class="container">    
                     <img src="./logo.png" style="float:left;margin-top:25px; margin-right:10px;"/>
-                    <a class="brand" href="#">
+                    <a class="brand" href="http://triviacrackgenerator.com">
                     
                     Trivia Crack <br/>Generator
                     </a>
@@ -93,18 +93,18 @@
             // Echo out a sample image
             //echo '<img src="',$image,'">';
 
-            //echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-width='123' data-type='button_count'></div>"
-            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/' data-width='123' data-type='button_count'></div>"
+            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button_count'></div>"
+            //echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/'  data-type='button_count'></div>"
             ?>
             
            <style>
                   .fb-share-button
                 {
-                transform: scale(2.5);
-                -ms-transform: scale(2.5);
-                -webkit-transform: scale(2.5);
-                -o-transform: scale(2.5);
-                -moz-transform: scale(2.5);
+                transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                -webkit-transform: scale(1.5);
+                -o-transform: scale(1.5);
+                -moz-transform: scale(1.5);
                 transform-origin: top left;
                 -ms-transform-origin: top left;
                 -webkit-transform-origin: top left;
