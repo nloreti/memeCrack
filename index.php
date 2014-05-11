@@ -43,7 +43,7 @@ $(document).ready(function() {
     min-height: 115px;
   }
   .navbar-default {
-    background-image: linear-gradient(to bottom,#FFF 0,#00A3FF 100%);
+    background-image: linear-gradient(to bottom,#00A3FF 0,#00A3FF 100%);
   }
   
 </style>
@@ -154,8 +154,8 @@ $(document).ready(function() {
                     data-bv-notempty="true"
                     data-bv-notempty-message="El campo 'respuesta correcta' es requerido y no puede quedar vacio"
                     data-bv-stringlength="true"
-                    data-bv-stringlength-min="20"
-                    data-bv-stringlength-max="90"
+                    data-bv-stringlength-min="1"
+                    data-bv-stringlength-max="30"
                     data-bv-stringlength-message="La respuesta debe tener entre 1 y 30 caracteres"
                   />
                 </div>
