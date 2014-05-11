@@ -14,11 +14,18 @@
 </head>
 
 <body>
+    <!--Facebook share-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 	<div class="navbar">
       <div class="navbar-inner">
-        <div class="container">
-            
-                    
+        <div class="container">    
                     <img src="./logo.png" style="float:left;margin-top:25px; margin-right:10px;"/>
                     <a class="brand" href="#">
                     
@@ -73,8 +80,10 @@
 
             // Echo out a sample image
             //echo '<img src="',$image,'">';
+
+            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-width='123' data-type='button_count'></div>"
             ?>
-            <div class="fb-share-button" data-href="http://triviacrackgenerator.com/meme.php" data-width="123" data-type="button_count"></div>
+            
         </div>
         <div class="filtros span8">
             <div class="filtros span8"></div>
@@ -102,14 +111,6 @@
             </div>
         </div>
 	</div>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=141188425906733&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 
 </html>
