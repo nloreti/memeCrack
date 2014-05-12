@@ -10,6 +10,7 @@
 <script type="text/javascript" src="./bootstrap/js/bootstrapValidator.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/nav.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-theme.min.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrapValidator.min.css" />
 <meta name="description" content="Generate your own trivia crack meme" />
@@ -56,18 +57,16 @@ $(document).ready(function() {
 
 <body>
 
-<header class="navbar navbar-default" role="navigation">
-  <div class="container">
-    <div class="navbar-brand">
-      <img src="./logo.png" style="float:left;margin-top:25px; margin-right:10px;"/>
-      <a href="http://www.triviacrackgenerator.com" class="navbar-brand">Trivia Crack <br/>Generator</a>
-    </div>
-    <nav class="navbar-default" role="navigation">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Community links', 'Expo']);">Ayuda</a></li>
-      </ul>
-      <div class="google-rectangle-add">
-          <div style="float:right;margin-top:10px;">
+
+  <div class="navbar2">
+      <div class="navbar2-inner">
+        <div class="container2">    
+              <img src="./logo.png" style="float:left;margin-top:25px; margin-right:10px;"/>
+              <a class="brand" href="http://triviacrackgenerator.com">
+              
+              Trivia Crack <br/>Generator
+              </a>
+            <div style="float:right;margin-top:10px;">
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- Trivia -->
               <ins class="adsbygoogle"
@@ -77,12 +76,11 @@ $(document).ready(function() {
               <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
-          </div>
+            </div>
+             
       </div>
-    </nav>
+    </div>
   </div>
-</header>
-
   <div class="container">
     <div class="row-fluid">
       <div class="col-md-4">
