@@ -66,16 +66,16 @@
         <div class="filtros span3">
             <?php 
             $pregunta1 = $_POST["pregunta1"];
-            $pregunta2 = $_POST["pregunta2"];
-            $pregunta3 = $_POST["pregunta3"];
+            //$pregunta2 = $_POST["pregunta2"];
+            //$pregunta3 = $_POST["pregunta3"];
             $opcion1 = $_POST["opcion1"];
             $opcion2 = $_POST["opcion2"];
             $opcion3 = $_POST["opcion3"];
             $respuesta_correcta = $_POST["opcion_correcta"];
-            $hash = hash('md5', $pregunta1.$pregunta2.$pregunta3.$opcion1.$opcion2.$opcion3);
+            $hash = hash('md5', $pregunta1.$opcion1.$opcion2.$opcion3);
             echo $pregunta1;
             $command = "java -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$hash."\"";
-            //echo $command;
+            echo $command;
             exec($command);
             //echo $output; 
             $filename = $hash.".png";
