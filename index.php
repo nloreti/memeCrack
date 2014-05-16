@@ -105,7 +105,7 @@ $(document).ready(function() {
             >
                 <div class="form-group">
                   <label>Modelo a Usar:</label>
-                  <select class="form-control" id="tipoBackground">
+                  <select class="form-control" name="tipoBackground" id="tipoBackground">
                       <option value="historia" selected>Historia</option>
                       <option value="ciencia">Ciencia</option>
                       <option value="arte">Arte</option>
