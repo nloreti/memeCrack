@@ -112,7 +112,7 @@ $(document).ready(function() {
             $opcion3 = $_POST["opcion3"];
             $respuesta_correcta = $_POST["opcion_correcta"];
             $tipo_background = $_POST["tipoBackground"];
-            echo "ACA ESTA EL RESULTADO: ".$tipo_background;
+            //echo "ACA ESTA EL RESULTADO: ".$tipo_background;
             $hash = hash('md5', $pregunta1.$opcion1.$opcion2.$opcion3);
             //echo $pregunta1;
             $command = "java -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$tipo_background."\" \"".$hash."\"";
