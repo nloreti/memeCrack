@@ -7,8 +7,16 @@
 <script type="text/javascript" src="./bootstrap/js/jquery.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="./bootstrap/js/bootstrapValidator.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/nav.css" />
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrapValidator.min.css" />
+<meta name="description" content="Generate your own trivia crack meme" />
+
+
+<title>Trivia Crack Generator</title>
 
 <!-- Facebook Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -17,16 +25,45 @@
 <meta property="og:title" content="Trivia Crack Generator"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="Generate your own trivia crack meme" />
+<meta property="og:site_name" content="Trivia Crack Generator"/>
+<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#questionForm').bootstrapValidator();
+});
+</script>
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50863215-1', 'triviacrackgenerator.com');
+  ga('send', 'pageview');
+</script>
+
+<style type="text/css">
+  .has-error .form-control-feedback {
+      color: #E74C3C;
+  }
+  .has-success .form-control-feedback {
+      color: #18BCA0;
+  }
+  .navbar {
+    min-height: 115px;
+  }
+  .navbar-default {
+    background-image: linear-gradient(to bottom,#00A3FF 0,#00A3FF 100%);
+  }
+  
+</style>
 <meta property="fb:app_id" content="141188425906733"/>
 <meta property="og:url" content="http://triviacrackgenerator.com"/>
 <!-- <meta property="article:author" content="https://www.facebook.com/x" />
-<meta property="article:publisher" content="https://www.facebook.com/x" />
- -->
+<meta property="article:publisher" content="https://www.facebook.com/x" /> -->
 
-
-
-
-<title>Trivia Crack Generator</title>
 </head>
 
 <body>
@@ -39,31 +76,33 @@
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=104070986315547&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>  
-	<div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">    
-                    <img src="./logo.png" style="float:left;margin-top:25px; margin-right:10px;"/>
-                    <a class="brand" href="http://triviacrackgenerator.com">
-                    
-                    Trivia Crack <br/>Generator
-                    </a>
-    <div style="float:right;margin-top:10px;">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- Trivia -->
-            <ins class="adsbygoogle"
-                 style="display:inline-block;width:728px;height:90px"
-                 data-ad-client="ca-pub-9140523267616881"
-                 data-ad-slot="9730560540"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+	 <div class="navbar2">
+      <div class="navbar2-inner">
+        <div class="container2">    
+              <img src="./logo.png" style="float:left;margin-top:25px; margin-right:10px;"/>
+              <a class="brand" href="http://triviacrackgenerator.com">
+              
+              Trivia Crack <br/>Generator
+              </a>
+            <div style="float:right;margin-top:10px;">
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- Trivia -->
+              <ins class="adsbygoogle"
+                   style="display:inline-block;width:728px;height:90px"
+                   data-ad-client="ca-pub-9140523267616881"
+                   data-ad-slot="9730560540"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
              
-        </div>
       </div>
     </div>
+  </div>
     <div class="container">
-        <div class="filtros span3">
+      <div class="row-fluid">
+         <div class="col-md-4"></div>
+        <div class="col-md-4">
             <?php 
             $pregunta1 = $_POST["pregunta1"];
             //$pregunta2 = $_POST["pregunta2"];
@@ -80,7 +119,7 @@
             //echo $output; 
             $filename = $hash.".png";
             //echo $filename;
-            echo "<img width='240' src='./".$filename."'>";
+            echo "<img width='300' src='./".$filename."'>";
             //$imagick = new Imagick(); 
             //$imagick->readImage($filename); 
             //$im = imagecreatefrompng($filename);
@@ -115,42 +154,33 @@
                 -webkit-transform-origin: top left;
                 }
             </style> 
-
-        </div>
-        <div class="filtros span8">
-            <div class="filtros span8"></div>
-            <div class="filtros span4">
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          </div>
+          <div class="col-md-4">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Banner-2 -->
+            <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:250px"
+                     data-ad-client="ca-pub-9140523267616881"
+                     data-ad-slot="7668084543"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- Banner-2 -->
                 <ins class="adsbygoogle"
                      style="display:inline-block;width:300px;height:250px"
                      data-ad-client="ca-pub-9140523267616881"
                      data-ad-slot="7668084543"></ins>
-                <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-            <div class="filtros span4">
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- Banner-2 -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:300px;height:250px"
-                     data-ad-client="ca-pub-9140523267616881"
-                     data-ad-slot="7668084543"></ins>
-                <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
         </div>
-	</div>
+      </div>
+      <div id="footer">
+      <div class="container">
+        <p class="text-muted">Preguntados y Trivia Crack Generator - 2014</p>
+      </div>
+    </div>
 </body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-50863215-1', 'triviacrackgenerator.com');
-  ga('send', 'pageview');
-</script>
 </html>
