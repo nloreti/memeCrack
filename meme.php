@@ -101,7 +101,27 @@ $(document).ready(function() {
   </div>
     <div class="container">
       <div class="row-fluid">
-         <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button'></div>
+          <style>
+                  .fb-share-button
+                {
+                margin-top: 20px;
+                transform: scale(2);
+                -ms-transform: scale(2);
+                -webkit-transform: scale(2);
+                -o-transform: scale(2);
+                -moz-transform: scale(2);
+                transform-origin: top left;
+                -ms-transform-origin: top left;
+                -webkit-transform-origin: top left;
+                -moz-transform-origin: top left;
+                -webkit-transform-origin: top left;
+                float:right;
+                margin-right:70px;
+                }
+            </style> 
+        </div>
         <div class="col-md-4">
             <?php 
             $pregunta1 = $_POST["pregunta1"];
@@ -137,25 +157,10 @@ $(document).ready(function() {
             //$src = 'data: '.mime_content_type($image).';base64,'.$imageData;
 
 
-            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button'></div>"
+            //echo "";
             ?>
             
-           <style>
-                  .fb-share-button
-                {
-                margin-top: 20px;
-                transform: scale(2);
-                -ms-transform: scale(2);
-                -webkit-transform: scale(2);
-                -o-transform: scale(2);
-                -moz-transform: scale(2);
-                transform-origin: top left;
-                -ms-transform-origin: top left;
-                -webkit-transform-origin: top left;
-                -moz-transform-origin: top left;
-                -webkit-transform-origin: top left;
-                }
-            </style> 
+           
           </div>
           <div class="col-md-4">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -166,7 +171,7 @@ $(document).ready(function() {
                      data-ad-slot="7668084543"></ins>
             <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+            </script><br/>
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- Banner-2 -->
                 <ins class="adsbygoogle"

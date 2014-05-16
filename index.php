@@ -187,7 +187,7 @@ $(document).ready(function() {
               (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
           </div>
-
+          
               <!-- Banner-3 -->
           <div class="google-square-add">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
