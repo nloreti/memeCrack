@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrapValidator.min.css" />
 <meta name="description" content="Generate your own trivia crack meme" />
 
+
 <title>Trivia Crack Generator</title>
 
 <!-- Facebook Tags -->
@@ -31,6 +32,16 @@
 $(document).ready(function() {
     $('#questionForm').bootstrapValidator();
 });
+</script>
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50863215-1', 'triviacrackgenerator.com');
+  ga('send', 'pageview');
 </script>
 
 <style type="text/css">
@@ -114,8 +125,8 @@ $(document).ready(function() {
                   ></textarea>
                 </div>
                 <div class="form-group">
-                  <label>Respuesta 1:</label>
-                  <input name="opcion1" id="opcion1" maxlength="30"
+                  
+                  <input name="opcion1" id="opcion1" maxlength="30" placeholder="Respuesta 1"
                     data-bv-notempty="true"
                     data-bv-notempty-message="El campo 'respuesta 1' es requerido y no puede quedar vacio"
                     data-bv-stringlength="true"
@@ -125,8 +136,8 @@ $(document).ready(function() {
                   />
                 </div>
                 <div class="form-group">
-                  <label>Respuesta 2:</label>
-                  <input name="opcion2" id="opcion2" maxlength="30"
+                  
+                  <input name="opcion2" id="opcion2" maxlength="30" placeholder="Respuesta 2"
                     data-bv-notempty="true"
                     data-bv-notempty-message="El campo 'respuesta 2' es requerido y no puede quedar vacio"
                     data-bv-stringlength="true"
@@ -136,8 +147,8 @@ $(document).ready(function() {
                   />
                 </div>
                 <div class="form-group">
-                  <label>Respuesta 3:</label>
-                  <input name="opcion3" id="opcion3" maxlength="30"
+                 
+                  <input name="opcion3" id="opcion3" maxlength="30" placeholder="Respuesta 3"
                     data-bv-notempty="true"
                     data-bv-notempty-message="El campo 'respuesta 3' es requerido y no puede quedar vacio"
                     data-bv-stringlength="true"
@@ -147,8 +158,8 @@ $(document).ready(function() {
                     />
                 </div>
                 <div class="form-group">
-                  <label>Respuesta correcta:</label>
-                  <input name="opcion_correcta" id="opcion_correcta" maxlength="30"
+                 
+                  <input name="opcion_correcta" id="opcion_correcta" maxlength="30" placeholder="Respuesta Correcta"
                     data-bv-notempty="true"
                     data-bv-notempty-message="El campo 'respuesta correcta' es requerido y no puede quedar vacio"
                     data-bv-stringlength="true"
@@ -163,7 +174,7 @@ $(document).ready(function() {
                 </div>
             </form>
         </div>
-        <div class="col-md-4">Columna 2</div>
+        <div class="col-md-4"></div>
         <div class="col-md-4">
                 <!-- Banner-2 -->
           <div class="google-square-add">
@@ -192,15 +203,10 @@ $(document).ready(function() {
       </div> <!-- /Row-fluid -->
       <div class="fb-share-button" data-href="http://triviacrackgenerator.com/a83920d1348eee579e4d5e2037b93657.png" data-type="button_count"></div>
     </div> <!-- /Container -->
-
+   <div id="footer">
+      <div class="container">
+        <p class="text-muted">Preguntados y Trivia Crack Generator - 2014</p>
+      </div>
+    </div>
 </body>
-<script type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-50863215-1', 'triviacrackgenerator.com');
-  ga('send', 'pageview');
-</script>
 </html>

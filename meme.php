@@ -73,9 +73,9 @@
             $opcion3 = $_POST["opcion3"];
             $respuesta_correcta = $_POST["opcion_correcta"];
             $hash = hash('md5', $pregunta1.$opcion1.$opcion2.$opcion3);
-            echo $pregunta1;
+            //echo $pregunta1;
             $command = "java -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$hash."\"";
-            echo $command;
+            //echo $command;
             exec($command);
             //echo $output; 
             $filename = $hash.".png";
