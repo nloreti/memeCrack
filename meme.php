@@ -75,7 +75,7 @@ $(document).ready(function() {
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=104070986315547&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>  
+    }(document, 'script', 'facebook-jssdk'));</script>
 	 <div class="navbar2">
       <div class="navbar2-inner">
         <div class="container2">    
