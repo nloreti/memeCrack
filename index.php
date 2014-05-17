@@ -31,7 +31,13 @@
 <script type="text/javascript">
 $(document).ready(function() {
     $('#questionForm').bootstrapValidator();
-});
+    $.getScript('//connect.facebook.net/en_UK/all.js', function(){
+      FB.ui({
+        method: 'share',
+        href: 'https://developers.facebook.com/docs/',
+      }, function(response){});
+    });
+    
 </script>
 
 <script type="text/javascript">
@@ -201,7 +207,11 @@ $(document).ready(function() {
           </div>
         </div><!-- /Columna 3 -->
       </div> <!-- /Row-fluid -->
-      <div class="fb-share-button" data-href="http://triviacrackgenerator.com/a83920d1348eee579e4d5e2037b93657.png" data-type="button_count"></div>
+      <a href="https://www.facebook.com/dialog/share_open_graph?app_id=104070986315547&display=popup&action_type=og.like&image=http%3A%2F%2Ftriviacrackgenerator.com%2F7c28d993d7eca9da1354b7955427875d.png&redirect_uri=http://triviacrackgenerator.com/">
+        Compartir en facebook</a>
+
+<!--         https://www.facebook.com/dialog/share_open_graph?app_id=104070986315547&display=popup&action_type=og.like&action_properties=%7B%22object%22%3A%22https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F%22%7D&redirect_uri=http://triviacrackgenerator.com/
+ -->        
     </div> <!-- /Container -->
    <div id="footer">
       <div class="container">
