@@ -102,7 +102,27 @@ $(document).ready(function() {
     <div class="container">
       <div class="row-fluid">
         <div class="col-md-4">
-          <div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button'></div>
+          <?php
+            $pregunta1 = $_POST["pregunta1"];
+            //$pregunta2 = $_POST["pregunta2"];
+            //$pregunta3 = $_POST["pregunta3"];
+            $opcion1 = $_POST["opcion1"];
+            $opcion2 = $_POST["opcion2"];
+            $opcion3 = $_POST["opcion3"];
+            $respuesta_correcta = $_POST["opcion_correcta"];
+            $tipo_background = $_POST["tipoBackground"];
+            //echo "ACA ESTA EL RESULTADO: ".$tipo_background;
+            $hash = hash('md5', $pregunta1.$opcion1.$opcion2.$opcion3);
+            //echo $pregunta1;
+            $command = "java -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$tipo_background."\" \"".$hash."\"";
+            //echo $command;
+            exec($command);
+            //echo $output; 
+            $filename = $hash.".png";
+            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button'></div>";
+
+          ?>
+  
           <style>
                   .fb-share-button
                 {
@@ -124,40 +144,7 @@ $(document).ready(function() {
         </div>
         <div class="col-md-4">
             <?php 
-            $pregunta1 = $_POST["pregunta1"];
-            //$pregunta2 = $_POST["pregunta2"];
-            //$pregunta3 = $_POST["pregunta3"];
-            $opcion1 = $_POST["opcion1"];
-            $opcion2 = $_POST["opcion2"];
-            $opcion3 = $_POST["opcion3"];
-            $respuesta_correcta = $_POST["opcion_correcta"];
-            $tipo_background = $_POST["tipoBackground"];
-            //echo "ACA ESTA EL RESULTADO: ".$tipo_background;
-            $hash = hash('md5', $pregunta1.$opcion1.$opcion2.$opcion3);
-            //echo $pregunta1;
-            $command = "java -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$tipo_background."\" \"".$hash."\"";
-            //echo $command;
-            exec($command);
-            //echo $output; 
-            $filename = $hash.".png";
-            //echo $filename;
-            echo "<img width='300' src='./".$filename."'>";
-            //$imagick = new Imagick(); 
-            //$imagick->readImage($filename); 
-            //$im = imagecreatefrompng($filename);
-            //header('Content-Type: image/png');
-            //imagepng($im);
-            //die();
-           
-            //$image = readfile($filename);
-            // Read image path, convert to base64 encoding
-            //$imageData = base64_encode(file_get_contents($image));
-
-            // Format the image SRC:  data:{mime};base64,{data};
-            //$src = 'data: '.mime_content_type($image).';base64,'.$imageData;
-
-
-            //echo "";
+              echo "<img width='300' src='./".$filename."'>";
             ?>
             
            
