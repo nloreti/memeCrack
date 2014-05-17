@@ -31,12 +31,6 @@
 <script type="text/javascript">
 $(document).ready(function() {
     $('#questionForm').bootstrapValidator();
-    $.getScript('//connect.facebook.net/en_UK/all.js', function(){
-      FB.ui({
-        method: 'share',
-        href: 'https://developers.facebook.com/docs/',
-      }, function(response){});
-    });
     
 </script>
 
