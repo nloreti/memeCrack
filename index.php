@@ -3,7 +3,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
+<meta property="og:title" content="Trivia Crack Generator"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Generate your own trivia crack meme" />
+<meta property="og:site_name" content="Trivia Crack Generator"/>
+<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
+
+
 <script type='text/javascript' src='http://www.google.com/jsapi'></script>
 <script type="text/javascript" src="./bootstrap/js/jquery.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -14,7 +23,6 @@
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/nav.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-theme.min.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrapValidator.min.css" />
-<meta name="description" content="Generate your own trivia crack meme" />
 
 
 <title>Trivia Crack Generator</title>
