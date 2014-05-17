@@ -2,7 +2,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<!-- Facebook Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
+<meta property="og:title" content="Trivia Crack Generator"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Crea tu propia pregunta de Preguntados/Trivia Crack" />
+<meta property="og:site_name" content="Trivia Crack Generator"/>
+<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
+
 <script type='text/javascript' src='http://www.google.com/jsapi'></script>
 <script type="text/javascript" src="./bootstrap/js/jquery.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -13,20 +22,11 @@
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/nav.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-theme.min.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrapValidator.min.css" />
-<meta name="description" content="Generate your own trivia crack meme" />
 
 
 <title>Trivia Crack Generator</title>
 
-<!-- Facebook Tags -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<meta name="viewport" content="width=device-width"/>
-<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
-<meta property="og:title" content="Trivia Crack Generator"/>
-<meta property="og:type" content="article"/>
-<meta property="og:description" content="Generate your own trivia crack meme" />
-<meta property="og:site_name" content="Trivia Crack Generator"/>
-<meta property="og:image" content="http://triviacrackgenerator.com/logo.png"/>
+
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -59,10 +59,8 @@ $(document).ready(function() {
   }
   
 </style>
-<meta property="fb:app_id" content="141188425906733"/>
-<meta property="og:url" content="http://triviacrackgenerator.com"/>
-<!-- <meta property="article:author" content="https://www.facebook.com/x" />
-<meta property="article:publisher" content="https://www.facebook.com/x" /> -->
+
+
 
 </head>
 
