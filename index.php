@@ -212,6 +212,7 @@ $(document).ready(function() {
 
 <!--         https://www.facebook.com/dialog/share_open_graph?app_id=104070986315547&display=popup&action_type=og.like&action_properties=%7B%22object%22%3A%22https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F%22%7D&redirect_uri=http://triviacrackgenerator.com/
  -->        
+
     </div> <!-- /Container -->
    <div id="footer">
       <div class="container">
