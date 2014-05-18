@@ -102,7 +102,7 @@ $(document).ready(function() {
       <div class="row-fluid">
         <div class="col-md-4" style="height: 100px;">
           <?php
-            $pregunta1 = utf8_encode ( $_POST["pregunta1"] );
+            $pregunta1 = $_POST["pregunta1"];
             //$pregunta2 = $_POST["pregunta2"];
             //$pregunta3 = $_POST["pregunta3"];
             $opcion1 = $_POST["opcion1"];
@@ -110,6 +110,10 @@ $(document).ready(function() {
             $opcion3 = $_POST["opcion3"];
             $respuesta_correcta = $_POST["opcion_correcta"];
             $tipo_background = $_POST["tipoBackground"];
+
+            echo "asi nomás: ". $pregunta1 ;
+            echo "bien?: " . utf8_encode ( $pregunta1 ) ;
+
             //echo "ACA ESTA EL RESULTADO: ".$tipo_background;
             $hash = hash('md5', $pregunta1.$opcion1.$opcion2.$opcion3);
             //echo $pregunta1;
