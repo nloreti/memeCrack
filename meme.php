@@ -102,10 +102,12 @@ $(document).ready(function() {
       <div class="row-fluid">
         <div class="col-md-4" style="height: 100px;">
           <?php
-            mb_internal_encoding("UTF-8");
-            mb_http_output( "UTF-8" );
+            mb_internal_encoding("iso-8859-1");
+            mb_http_output( "iso-8859-1" );
             ob_start("mb_output_handler");
             $pregunta1 = $_POST["pregunta1"];
+
+            echo mb_internal_encoding();
             //$pregunta2 = $_POST["pregunta2"];
             //$pregunta3 = $_POST["pregunta3"];
 
