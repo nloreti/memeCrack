@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <!-- Facebook Tags -->
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
-<meta name="viewport" content="width=device-width"/>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width"/>
 <meta property="og:title" content="Trivia Crack Generator"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="http://triviacrackgenerator.com"/>
@@ -102,9 +102,10 @@ $(document).ready(function() {
       <div class="row-fluid">
         <div class="col-md-4" style="height: 100px;">
           <?php
-            mb_internal_encoding("iso-8859-1");
-            mb_http_output( "iso-8859-1" );
-            ob_start("mb_output_handler");
+            ini_set('default_charset', 'utf-8')
+            // mb_internal_encoding("iso-8859-1");
+            // mb_http_output( "iso-8859-1" );
+            // ob_start("mb_output_handler");
             $pregunta1 = $_POST["pregunta1"];
 
             echo mb_internal_encoding();
