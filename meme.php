@@ -102,6 +102,7 @@ $(document).ready(function() {
       <div class="row-fluid">
         <div class="col-md-4" style="height: 100px;">
           <?php
+            mb_http_input();
             $pregunta1 = $_POST["pregunta1"];
             //$pregunta2 = $_POST["pregunta2"];
             //$pregunta3 = $_POST["pregunta3"];
