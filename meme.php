@@ -102,7 +102,7 @@ $(document).ready(function() {
       <div class="row-fluid">
         <div class="col-md-4" style="height: 100px;">
           <?php
-            ini_set('default_charset', 'utf-8')
+            ini_set('default_charset', 'utf-8');
             // mb_internal_encoding("iso-8859-1");
             // mb_http_output( "iso-8859-1" );
             // ob_start("mb_output_handler");
