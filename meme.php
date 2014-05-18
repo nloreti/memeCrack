@@ -102,6 +102,7 @@ $(document).ready(function() {
       <div class="row-fluid">
         <div class="col-md-4" style="height: 100px;">
           <?php
+            header('Content-Type: text/html; charset=UTF-8');
             $pregunta1 = $_POST["pregunta1"];
             //$pregunta2 = $_POST["pregunta2"];
             //$pregunta3 = $_POST["pregunta3"];
@@ -123,7 +124,7 @@ $(document).ready(function() {
             //echo $output; 
             $filename = $hash.".png";
             echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button'></div>";
-
+            echo "¿quiero ver sí esto anña esto anda muy bien o muy mál ?"
           ?>
   
           <style>
