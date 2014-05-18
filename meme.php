@@ -116,6 +116,10 @@ $(document).ready(function() {
             //echo $pregunta1;
             $command = "java -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$tipo_background."\" \"".$hash."\"";
             //echo $command;
+            $fp = fopen("myText.txt","wb");
+            fwrite($fp,$pregunta1);
+            fclose($fp);
+
             exec($command);
             //echo $output; 
             $filename = $hash.".png";
