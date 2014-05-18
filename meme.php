@@ -103,9 +103,9 @@ $(document).ready(function() {
         <div class="col-md-4" style="height: 100px;">
           <?php
             ini_set('default_charset', 'utf-8');
-            // mb_internal_encoding("iso-8859-1");
-            // mb_http_output( "iso-8859-1" );
-            // ob_start("mb_output_handler");
+            mb_internal_encoding("utf-8");
+            mb_http_output( "utf-8" );
+            ob_start("mb_output_handler");
             $pregunta1 = $_POST["pregunta1"];
 
             echo mb_internal_encoding();
