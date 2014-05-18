@@ -1,27 +1,41 @@
+package meme;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.net.URLEncoder;
 import java.util.Scanner;
 
 import javax.imageio.ImageIO;
 
-public class MemeGenerator {
+public class memeGenerator {
 
 	public static void main(String[] args) throws Exception {
-		String question = args[0];// "ÀCual es la famosa";
+		String questionarg = args[0];// "¿Cuál es la famosa";
 		// String question_1 = args[1];//"Piramide realizada por los";
 		// String question_2 = args[2];//"Egipcios en el siglo X?";
+//		System.out.println(questionarg);
+		byte[] bytes = questionarg.getBytes("ISO-8859-1");
+		String question = new String(bytes, "ISO-8859-1"); //decoding to ISO-8859-1
+//		String questionarg = "%BFquiero+v%E9r+si+esto+anda+esto+anda+muy+bien+o+muy+m%E1l+%3F";
+//		String question = java.net.URLDecoder.decode(questionarg, "ISO-8859-1");
+		System.out.println(question);
 		String question_0 = "";
 		String question_1 = "";
 		String question_2 = "";
 		String string1 = args[1];// "Chino gay";
+//		String string1 = "Chino gay";
 		String string2 = args[2];// "Karpo gay";
+//		String string2 =  "Karpo gay";
 		String string3 = args[3];// "Chino maracaibo";
+//		String string3 = "Chino maracaibo";
 		String string4 = args[4];// "Karpo maracaibo";
+//		String string4 = "Karpo maracaibo";
 		String tipo_background = args[5];
+//		String tipo_background = "historia";
 		String outputName = args[6];
+//		String outputName = "test";
 		File file = new File(tipo_background+".png");
 		final BufferedImage image = ImageIO.read(file);
 
