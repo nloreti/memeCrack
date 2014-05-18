@@ -114,7 +114,7 @@ $(document).ready(function() {
             //echo "ACA ESTA EL RESULTADO: ".$tipo_background;
             $hash = hash('md5', $pregunta1.$opcion1.$opcion2.$opcion3);
             //echo $pregunta1;
-            $command = "java -Dfile.encoding=iso-8859-1  -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$tipo_background."\" \"".$hash."\"";
+            $command = "java -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$tipo_background."\" \"".$hash."\"";
             //echo $command;
             exec($command);
             //echo $output; 
