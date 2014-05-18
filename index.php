@@ -199,8 +199,8 @@ $(document).ready(function() {
           </div>
         </div><!-- /Columna 3 -->
       </div> <!-- /Row-fluid -->
-      <a href="https://www.facebook.com/dialog/share_open_graph?app_id=104070986315547&display=popup&action_type=og.like&image=http%3A%2F%2Ftriviacrackgenerator.com%2F7c28d993d7eca9da1354b7955427875d.png&redirect_uri=http://triviacrackgenerator.com/">
-        Compartir en facebook</a>
+<!--       <a href="https://www.facebook.com/dialog/share_open_graph?app_id=104070986315547&display=popup&action_type=og.like&image=http%3A%2F%2Ftriviacrackgenerator.com%2F7c28d993d7eca9da1354b7955427875d.png&redirect_uri=http://triviacrackgenerator.com/">
+        Compartir en facebook</a> -->
 
 <!--         https://www.facebook.com/dialog/share_open_graph?app_id=104070986315547&display=popup&action_type=og.like&action_properties=%7B%22object%22%3A%22https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F%22%7D&redirect_uri=http://triviacrackgenerator.com/
  -->        
