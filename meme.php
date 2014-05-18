@@ -111,8 +111,8 @@ $(document).ready(function() {
             $respuesta_correcta = $_POST["opcion_correcta"];
             $tipo_background = $_POST["tipoBackground"];
 
-            echo "asi nomás: ". $pregunta1 ;
-            echo "bien?: " . utf8_encode ( $pregunta1 ) ;
+            // echo "asi nomás: ". $pregunta1 ;
+            // echo "bien?: " . utf8_encode ( $pregunta1 ) ;
 
             //echo "ACA ESTA EL RESULTADO: ".$tipo_background;
             $hash = hash('md5', $pregunta1.$opcion1.$opcion2.$opcion3);
