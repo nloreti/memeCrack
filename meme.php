@@ -118,13 +118,15 @@ $(document).ready(function() {
             //echo "ACA ESTA EL RESULTADO: ".$tipo_background;
             $hash = hash('md5', $pregunta1.$opcion1.$opcion2.$opcion3);
             //echo $pregunta1;
-            $command = "java -Dfile.encoding=iso-8859-1 -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$tipo_background."\" \"".$hash."\"";
+            // $command = "java -Dfile.encoding=iso-8859-1 -jar memeGenerator.jar "."\"".$pregunta1."\" \"".$opcion1."\" \"".$opcion2."\" \"".$opcion3."\" \"".$respuesta_correcta."\" \"".$tipo_background."\" \"".$hash."\"";
+            $command = "java -Dfile.encoding=iso-8859-1 -jar memeGenerator.jar" ;
             //echo $command;
             exec($command);
             //echo $output; 
             $filename = $hash.".png";
-            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button'></div>";
-            echo "¿quiero ver sí esto anña esto anda muy bien o muy mál ?"
+            // echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/" . $filename . "' data-type='button'></div>";
+            echo "<div class='fb-share-button' data-href='http://triviacrackgenerator.com/test.png' data-type='button'></div>";
+            //echo "¿quiero ver sí esto anña esto anda muy bien o muy mál ?"
           ?>
   
           <style>
