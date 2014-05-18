@@ -19,6 +19,7 @@
 <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrapValidator.min.js"></script>
 
+
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/nav.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-theme.min.css" />
@@ -32,6 +33,7 @@
 <script type="text/javascript">
 $(document).ready(function() {
     $('#questionForm').bootstrapValidator();
+});
 </script>
 
 <script type="text/javascript">
