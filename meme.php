@@ -100,7 +100,7 @@ $(document).ready(function() {
   </div>
     <div class="container">
       <div class="row-fluid">
-        <div class="col-md-4">
+        <div class="col-md-4" style="height: 100px;">
           <?php
             $pregunta1 = $_POST["pregunta1"];
             //$pregunta2 = $_POST["pregunta2"];
