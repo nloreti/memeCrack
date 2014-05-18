@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <!-- Facebook Tags -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
 <meta name="viewport" content="width=device-width"/>
 <meta property="og:title" content="Trivia Crack Generator"/>
 <meta property="og:type" content="website"/>
