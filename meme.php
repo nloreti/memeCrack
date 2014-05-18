@@ -107,6 +107,7 @@ $(document).ready(function() {
             mb_http_output( "utf-8" );
             ob_start("mb_output_handler");
             $pregunta1 = $_POST["pregunta1"];
+            echo $pregunta1;
 
             echo mb_internal_encoding();
             //$pregunta2 = $_POST["pregunta2"];
