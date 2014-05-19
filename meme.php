@@ -20,6 +20,7 @@
 <script type="text/javascript" src="./bootstrap/js/bootstrapValidator.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-responsive.min2.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/nav.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-theme.min.css" />
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrapValidator.min.css" />
@@ -83,7 +84,7 @@ $(document).ready(function() {
               
               Trivia Crack <br/>Generator
               </a>
-            <div style="float:right;margin-top:10px;">
+            <div class="hidden-phone" style="float:right;margin-top:10px;">
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- Trivia -->
               <ins class="adsbygoogle"
