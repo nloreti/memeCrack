@@ -1,4 +1,6 @@
 package meme;
+
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -16,10 +18,11 @@ public class memeGenerator {
 		// String question_1 = args[1];//"Piramide realizada por los";
 		// String question_2 = args[2];//"Egipcios en el siglo X?";
 //		System.out.println(questionarg);
-		byte[] bytes = questionarg.getBytes("ISO-8859-1");
-		String question = new String(bytes, "ISO-8859-1"); //decoding to ISO-8859-1
+//		byte[] bytes = questionarg.getBytes("ISO-8859-1");
+//		String question = new String(bytes, "ISO-8859-1"); //decoding to ISO-8859-1
 //		String questionarg = "%BFquiero+v%E9r+si+esto+anda+esto+anda+muy+bien+o+muy+m%E1l+%3F";
 //		String question = java.net.URLDecoder.decode(questionarg, "ISO-8859-1");
+		String question = new String(MyBase64.decode(questionarg), "ISO-8859-1");
 		System.out.println(question);
 		String question_0 = "";
 		String question_1 = "";
