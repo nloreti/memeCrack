@@ -1,12 +1,11 @@
-package meme;
-
 
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.net.URLEncoder;
+import java.lang.reflect.Field;
+import java.nio.charset.Charset;
 import java.util.Scanner;
 
 import javax.imageio.ImageIO;
@@ -14,21 +13,37 @@ import javax.imageio.ImageIO;
 public class memeGenerator {
 
 	public static void main(String[] args) throws Exception {
+		System.setProperty("file.encoding","UTF-8");
+		Field charset = Charset.class.getDeclaredField("defaultCharset");
+		charset.setAccessible(true);
+		charset.set(null,null);
 		String questionarg = args[0];// "¿Cuál es la famosa";
-		String string1arg = args[1];// "Chino gay";
-		String string2arg = args[2];// "Karpo gay";
-		String string3arg = args[3];// "Chino maracaibo";
-		String string4arg = args[4];// "Karpo maracaibo"
-		
-		String question = new String(MyBase64.decode(questionarg), "ISO-8859-1");
-		System.out.println(question);
+		// String question_1 = args[1];//"Piramide realizada por los";
+		// String question_2 = args[2];//"Egipcios en el siglo X?";
+//		System.out.println(questionarg);
+//		System.out.println("questionarg: " + questionarg);
+//		System.out.println("questionarg: " + Base64.decode(questionarg));
+//		System.out.println(java.net.URLDecoder.decode(questionarg, "ISO-8859-1"));
+//		System.out.println(java.net.URLDecoder.decode(questionarg, "UTF-8"));
+
+//		System.out.println("Bytes UTF8: " + bytes);
+//		System.out.println("Bytes ISO: " + questionarg.getBytes("ISO-8859-1"));
+		String question = new String(Base64.decode(questionarg),"UTF-8");
+//		String questionarg = "%BFquiero+v%E9r+si+esto+anda+esto+anda+muy+bien+o+muy+m%E1l+%3F";
+//		String question = java.net.URLDecoder.decode(questionarg, "ISO-8859-1");
+//		System.out.println("Pregunta UTF8: " + question);
+//		System.out.println("Pregunta ISO: " + new String(questionarg.getBytes("ISO-8859-1"), "UTF-8"));
 		String question_0 = "";
 		String question_1 = "";
 		String question_2 = "";
-		String string1 = new String(MyBase64.decode(string1arg), "ISO-8859-1");
-		String string2 = new String(MyBase64.decode(string2arg), "ISO-8859-1");
-		String string3 = new String(MyBase64.decode(string3arg), "ISO-8859-1");
-		String string4 = new String(MyBase64.decode(string4arg), "ISO-8859-1");
+		String string1 = new String(Base64.decode(args[1]),"UTF-8");// "Chino gay";
+//		String string1 = "Chino gay";
+		String string2 = new String(Base64.decode(args[2]),"UTF-8");// "Karpo gay";
+//		String string2 =  "Karpo gay";
+		String string3 = new String(Base64.decode(args[3]),"UTF-8");// "Chino maracaibo";
+//		String string3 = "Chino maracaibo";
+		String string4 = new String(Base64.decode(args[4]),"UTF-8");// "Karpo maracaibo";
+//		String string4 = "Karpo maracaibo";
 		String tipo_background = args[5];
 //		String tipo_background = "historia";
 		String outputName = args[6];

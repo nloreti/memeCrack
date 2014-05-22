@@ -35,34 +35,34 @@
 $(document).ready(function() {
     $('#questionForm').bootstrapValidator();
 
-    //encodeando a base64
-    $('#questionForm').on('submit', function(e) { //use on if jQuery 1.7+
-       // e.preventDefault();  //prevent form from submitting
-        //e.preventDefault();
+    // //encodeando a base64
+    // $('#questionForm').on('submit', function(e) { //use on if jQuery 1.7+
+    //    // e.preventDefault();  //prevent form from submitting
+    //     //e.preventDefault();
 
-        var val = $('textarea#pregunta1').val(); 
-        $('textarea#pregunta1').val( $.base64.encode(val) );
+    //     var val = $('textarea#pregunta1').val(); 
+    //     $('textarea#pregunta1').val( $.base64.encode(val) );
 
-        var val1 = $('input#opcion1').val(); 
-        $('input#opcion1').val( $.base64.encode(val1) );
+    //     var val1 = $('input#opcion1').val(); 
+    //     $('input#opcion1').val( $.base64.encode(val1) );
 
-        var val2 = $('input#opcion2').val(); 
-        $('input#opcion2').val( $.base64.encode(val2) );
+    //     var val2 = $('input#opcion2').val(); 
+    //     $('input#opcion2').val( $.base64.encode(val2) );
 
-        var val3 = $('input#opcion3').val(); 
-        $('input#opcion3').val( $.base64.encode(val3) );
+    //     var val3 = $('input#opcion3').val(); 
+    //     $('input#opcion3').val( $.base64.encode(val3) );
         
-        var val4 = $('input#opcion_correcta').val(); 
-        $('input#opcion_correcta').val( $.base64.encode(val4) );
-        //$('#questionForm').submit();
+    //     var val4 = $('input#opcion_correcta').val(); 
+    //     $('input#opcion_correcta').val( $.base64.encode(val4) );
+    //     //$('#questionForm').submit();
 
-         setTimeout(
-          function() 
-          {
-            //do something special
-          }, 2000);
+    //      setTimeout(
+    //       function() 
+    //       {
+    //         //do something special
+    //       }, 2000);
           
-    });
+    // });
 });
 </script>
 
