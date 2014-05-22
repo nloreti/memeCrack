@@ -17,6 +17,7 @@
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="./js/jquery.base64.min.js"></script>
 
 
 <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" />
@@ -33,6 +34,13 @@
 <script type="text/javascript">
 $(document).ready(function() {
     $('#questionForm').bootstrapValidator();
+
+    //encodeando a base64
+    $('#questionForm').on('submit', function(e) { //use on if jQuery 1.7+
+       // e.preventDefault();  //prevent form from submitting
+        var val = $('textarea#pregunta1').val(); 
+        $('textarea#pregunta1').val( $.base64.encode(val) );
+    });
 });
 </script>
 
