@@ -40,12 +40,6 @@ $(document).ready(function() {
        // e.preventDefault();  //prevent form from submitting
         //e.preventDefault();
 
-        setTimeout(
-          function() 
-          {
-            //do something special
-          }, 2000);
-
         var val = $('textarea#pregunta1').val(); 
         $('textarea#pregunta1').val( $.base64.encode(val) );
 
@@ -61,6 +55,12 @@ $(document).ready(function() {
         var val4 = $('input#opcion_correcta').val(); 
         $('input#opcion_correcta').val( $.base64.encode(val4) );
         //$('#questionForm').submit();
+
+         setTimeout(
+          function() 
+          {
+            //do something special
+          }, 2000);
           
     });
 });
