@@ -38,6 +38,7 @@ $(document).ready(function() {
     //encodeando a base64
     $('#questionForm').on('submit', function(e) { //use on if jQuery 1.7+
        // e.preventDefault();  //prevent form from submitting
+        e.preventDefault();
         var val = $('textarea#pregunta1').val(); 
         $('textarea#pregunta1').val( $.base64.encode(val) );
 
@@ -52,7 +53,8 @@ $(document).ready(function() {
         
         var val4 = $('input#opcion_correcta').val(); 
         $('input#opcion_correcta').val( $.base64.encode(val4) );
-        
+        $('#questionForm').submit();
+          
     });
 });
 </script>
