@@ -40,6 +40,19 @@ $(document).ready(function() {
        // e.preventDefault();  //prevent form from submitting
         var val = $('textarea#pregunta1').val(); 
         $('textarea#pregunta1').val( $.base64.encode(val) );
+
+        var val1 = $('input#opcion1').val(); 
+        $('input#opcion1').val( $.base64.encode(val1) );
+
+        var val2 = $('input#opcion2').val(); 
+        $('input#opcion2').val( $.base64.encode(val2) );
+
+        var val3 = $('input#opcion3').val(); 
+        $('input#opcion3').val( $.base64.encode(val3) );
+        
+        var val4 = $('input#opcion_correcta').val(); 
+        $('input#opcion_correcta').val( $.base64.encode(val4) );
+        
     });
 });
 </script>
