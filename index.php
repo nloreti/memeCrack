@@ -34,35 +34,6 @@
 <script type="text/javascript">
 $(document).ready(function() {
     $('#questionForm').bootstrapValidator();
-
-    // //encodeando a base64
-    // $('#questionForm').on('submit', function(e) { //use on if jQuery 1.7+
-    //    // e.preventDefault();  //prevent form from submitting
-    //     //e.preventDefault();
-
-    //     var val = $('textarea#pregunta1').val(); 
-    //     $('textarea#pregunta1').val( $.base64.encode(val) );
-
-    //     var val1 = $('input#opcion1').val(); 
-    //     $('input#opcion1').val( $.base64.encode(val1) );
-
-    //     var val2 = $('input#opcion2').val(); 
-    //     $('input#opcion2').val( $.base64.encode(val2) );
-
-    //     var val3 = $('input#opcion3').val(); 
-    //     $('input#opcion3').val( $.base64.encode(val3) );
-        
-    //     var val4 = $('input#opcion_correcta').val(); 
-    //     $('input#opcion_correcta').val( $.base64.encode(val4) );
-    //     //$('#questionForm').submit();
-
-    //      setTimeout(
-    //       function() 
-    //       {
-    //         //do something special
-    //       }, 2000);
-          
-    // });
 });
 </script>
 
@@ -96,6 +67,24 @@ $(document).ready(function() {
 </head>
 
 <body>
+  <!--Facebook SDK javascript setup-->
+   <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '104070986315547',
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/es_LA/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 
   <div class="navbar2">
@@ -230,7 +219,15 @@ $(document).ready(function() {
           </div>
         </div><!-- /Columna 3 -->
 
-        <a href="http://m.facebook.com/sharer.php?u=http://triviacrackgenerator.com>Share">Share</a>
+        <!-- <a href="http://m.facebook.com/sharer.php?u=http://triviacrackgenerator.com>Share">Share</a> -->
+        <div
+          class="fb-like"
+          data-send="true"
+          data-width="450"
+          data-show-faces="true">
+        </div>
+
+        <a href="https://www.facebook.com/dialog/share?app_id=104070986315547&display=touch&href=http%3A%2F%2Fhttp://triviacrackgenerator.com%2Fc4c512d004f7e804b906f1599b2e28c3.png&redirect_uri=https://triviacrackgenerator.com">Share</a>
       </div> <!-- /Row-fluid -->
 <!--       <a href="https://www.facebook.com/dialog/share_open_graph?app_id=104070986315547&display=popup&action_type=og.like&image=http%3A%2F%2Ftriviacrackgenerator.com%2F7c28d993d7eca9da1354b7955427875d.png&redirect_uri=http://triviacrackgenerator.com/">
         Compartir en facebook</a> -->
