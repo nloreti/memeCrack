@@ -229,6 +229,8 @@ $(document).ready(function() {
 
         <a href="https://www.facebook.com/dialog/share?app_id=104070986315547&display=touch&href=http%3A%2F%2Ftriviacrackgenerator.com%2Fba1cd19ce42af462d29cc9bf32cb306f.png&redirect_uri=https%3A%2F%2Ftriviacrackgenerator.com">Share</a>
         <a href="fb://profile/212971392077465" class="facebook">My Fanpage</a>
+        <a href="fb://share?app_id=104070986315547&display=touch&href=http%3A%2F%2Ftriviacrackgenerator.com%2Fba1cd19ce42af462d29cc9bf32cb306f.png&redirect_uri=https%3A%2F%2Ftriviacrackgenerator.com" class="facebook">My Share</a>
+        
       </div> <!-- /Row-fluid -->
 <!--       <a href="https://www.facebook.com/dialog/share_open_graph?app_id=104070986315547&display=popup&action_type=og.like&image=http%3A%2F%2Ftriviacrackgenerator.com%2F7c28d993d7eca9da1354b7955427875d.png&redirect_uri=http://triviacrackgenerator.com/">
         Compartir en facebook</a> -->
