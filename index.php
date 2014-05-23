@@ -229,6 +229,8 @@ $(document).ready(function() {
             </script>
           </div>
         </div><!-- /Columna 3 -->
+
+        <a href="http://m.facebook.com/sharer.php?u=http://triviacrackgenerator.com>Share">Share</a>
       </div> <!-- /Row-fluid -->
 <!--       <a href="https://www.facebook.com/dialog/share_open_graph?app_id=104070986315547&display=popup&action_type=og.like&image=http%3A%2F%2Ftriviacrackgenerator.com%2F7c28d993d7eca9da1354b7955427875d.png&redirect_uri=http://triviacrackgenerator.com/">
         Compartir en facebook</a> -->
